@@ -71,13 +71,14 @@ public class JUnit4TestCalculator {
 ```
 
 實際執行順序會是：
-@BeforeClass
-@Before
-@Test – testSubtraction()
-@After
-@Before
-@Test – testAdd()
-@After
-@AfterClass
++ @BeforeClass
++ @Before
++ @Test – testSubtraction()
++ @After
++ @Before
++ @Test – testAdd()
++ @After
++ @AfterClass
 
 有這樣的基本架構這樣就可以執行 JUnit 4 了。
+按滑鼠右鍵Run。
