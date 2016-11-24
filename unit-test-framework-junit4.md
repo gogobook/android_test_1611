@@ -8,17 +8,18 @@
 
 ## 2. 寫一個 JUnit Test 的 Class
 假設今天要利用 JUnit 4 測試一個 method，必須掌握以下幾個要點：
+
 1. 在 test method 上面加上 @test
 2. @Before：會在每一個 @test 前先執行一次，就像 JUnit 3 的 setUp.
 3. @After：會在每一個 @test 後再執行一次，就像 JUnit 3 的 tearDown.
 4. @BeforeClass：會在執行 class 前會先執行一次
 5. @AfterClass：會在執行完 class 後會再執行一次
-6. assertEquals：幫助檢驗執行結果與預期結果是否相等 //真正的執斷言的方法參數為(預期值, 實際值)
+6. assertEquals：幫助檢驗執行結果與預期結果是否相等 //真正的執行斷言的方法參數為(預期值, 實際值)。
 
 通常在assertEquals的上方會寫實例化，以便使用類別內的方法與屬性。
 
 ```java
-//做為範例的程式碼
+//做為範例的程式碼，測試的程式是一個計算機的程式。
 public class JUnit4TestCalculator {
     @BeforeClass
     public static void beforeClass()
@@ -81,4 +82,5 @@ public class JUnit4TestCalculator {
 + @AfterClass
 
 有這樣的基本架構這樣就可以執行 JUnit 4 了。
+
 按滑鼠右鍵Run。
